@@ -32,6 +32,15 @@ namespace NationalTeam.WebApi.Controllers
             return _teamRepository.GetAll();
         }
 
+        [Route("api/[controller]/primeirotestepratico")]
+        [HttpGet]
+
+        public string PrimeiroTestePratico()
+        {
+            return @"Testado;]"; 
+        }
+
+
         [Route("api/[controller]/teste")]
         [HttpGet]
         public string Teste()
